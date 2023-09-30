@@ -35,7 +35,7 @@
 
 
 
-    // Short note 
+    // IMP Short note 
 
     // "33"  => 33
     // "33abc"  => NaN
