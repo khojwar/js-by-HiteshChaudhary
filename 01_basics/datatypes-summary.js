@@ -58,6 +58,40 @@ console.log(typeof anotherId);
 
 
 
+// ++++++++++++++++++++++++++++++++++++ Memory types +++++++++++++++++++++++++++++++++++++++++++
+// 1. Stack 
+// primitive datatype le stack memory use garxa
+// jaba stack memory use hunxa, taba jun variable use garekaa xau tesko copy banxa
+// eg. 
+
+let myYoutubename = "tikaramkhojwardotcom"
+
+let anothername = myYoutubename
+anothername = "khojwar"
+
+console.log(myYoutubename)
+console.log(anothername)
+
+
+// 2. Heap 
+// non-primitive le heap memory use garxa
+// function or object heap vitra define gareko xa vane tehaa bata reference banxa original value ko. yasmaa j chenge garxau tio original value maa chenge hunxa
+
+let userOne = {
+    email: "user@google.com",
+    upi: "user@ybl"
+}
+
+let userTwo = userOne
+
+userTwo.email = "hitesh@google.com"
+
+console.log(userOne.email)
+console.log(userTwo.email)
+
+
+
+
 // ******************************** JS is dynamically typed language ********************************************
 
 // JavaScript is a "dynamically typed" language. 
