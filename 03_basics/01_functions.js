@@ -8,21 +8,21 @@ function sayMyName(){
     console.log("H");
 }
 
-// sayMyName()
+// sayMyName()              // sayMyName --> reference  And () --> execute/execution
 
 // function addTwoNumbers(number1, number2){
 
 //     console.log(number1 + number2);
 // }
 
-function addTwoNumbers(number1, number2){
+function addTwoNumbers(number1, number2){       // function maa parameters vanne
 
     // let result = number1 + number2
     // return result
-    return number1 + number2
+    return number1 + number2            
 }
 
-const result = addTwoNumbers(3, 5)
+const result = addTwoNumbers(3, 5)      // call gardaa arguments vanne
 
 // console.log("Result: ", result);
 
@@ -39,7 +39,7 @@ function loginUserMessage(username = "sam"){
 // console.log(loginUserMessage("hitesh"))
 
 
-function calculateCartPrice(val1, val2, ...num1){
+function calculateCartPrice(val1, val2, ...num1){       // rest operator --> baki value laai list [] ko form maa linxa 
     return num1
 }
 
