@@ -39,3 +39,8 @@ myCoding.forEach( (item) => {
     
     console.log(item.languageName);
 } )
+
+
+
+
+//  NOTE: foreach le value return gardaina. yasko example next js file maa herxau

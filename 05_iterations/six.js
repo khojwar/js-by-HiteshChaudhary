@@ -6,14 +6,20 @@
 //     return item
 // } )
 
-// console.log(values);
+// console.log(values);       // note: foreach le value return gardaina 
+
+
+// ------------------------------------------------------------------------------------------------
+// ******************************** filter function: callback function ********************************************************
 
 const myNums = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-// const newNums = myNums.filter( (num) => {
+// const newNums = myNums.filter( (num) => {        // value return garxa. Tara {} scope open garyo bhane return lekhnai parxa. (implicit ra explicit ko concept use hunxa)
 //     return num > 4
 // } )
 
+
+// ------------------ alternative way by using forEach (it needs if condition)-----------------------------------------------------
 // const newNums = []
 
 // myNums.forEach( (num) => {
