@@ -32,7 +32,7 @@ buttons.forEach(function (button) {
     
   });
 });
-
+```
 
 ```javascript
 // by using switch case
@@ -71,7 +71,7 @@ buttons.forEach((button) => {
   })
 })
 
-```
+
 
 ```
 
