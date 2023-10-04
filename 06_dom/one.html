@@ -28,4 +28,51 @@
         </ul>
     </div>
 </body>
+
+<script>
+    // ************************** accessing elements by id ***********************************
+    const title = document.getElementById("title")
+    // console.log(title);
+    // console.log(title.id);
+    // console.log(title.className);
+
+    // accessing the attributes
+    console.log(title.getAttribute("class"));
+    console.log(title.getAttribute("id"));
+
+    // adding class and classes in the form of key-value form
+    console.log(title.setAttribute("class", "test"));       // class = "test" hunxa. NOTE: setAttribute le jaile ni previous attribute laai override garxa
+    console.log(title.setAttribute("class", "test heading"));
+
+    // adding css styles
+    console.log(title.style.backgroundColor = 'green');
+    console.log(title.style.padding = "15px");
+    console.log(title.style.borderRadius = "15px");
+
+    console.log(title);
+
+    // accessing text content (textContent vs innerText vs innerHTML)
+    console.log(title.textContent);     // access hidden text too
+    console.log(title.innerHTML);       // access text as well as tags eg span
+    console.log(title.innerText);       // only access visible text
+
+
+    // ************************** accessing elements by class name ***********************************
+    console.log(document.getElementsByClassName("heading"));
+
+
+    //************************************** IMP *****************************************************
+    // ************************** Real World maa max use garine selector haru ***********************************
+    // 1. querySelector --> mention gareko element madhe first element
+    // 2. querySelectorAll
+
+    console.log(document.querySelector("h2"));      // css selector lekhe jastai lekhne
+    console.log(document.querySelector("#title"));      // css selector lekhe jastai lekhne
+    console.log(document.querySelector(".heading"));      // css selector lekhe jastai lekhne
+    console.log(document.querySelector("input[type='password']"));      // select input which has type="password" attribure  // css selector lekhe jastai lekhne   
+    console.log(document.querySelector("p:first-child"));      // css selector lekhe jastai lekhne
+
+
+
+</script>
 </html>
