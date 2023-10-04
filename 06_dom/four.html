@@ -13,31 +13,34 @@
 </body>
 <script>
     function addLanguage(langName){
-        const li = document.createElement('li');       // creating list, add text and append that list as child-list in parent
-        li.innerHTML = `${langName}`
+        const li = document.createElement('li');       // creating list element, add text using innerHTML and attach to the parent ul
+        li.innerHTML = `${langName}`                    // innerHTML use gardaa purai tree traverse hunxa
         document.querySelector('.language').appendChild(li)
     }
     addLanguage("python")
     addLanguage("typescript")
 
+    // ******************************optimize way***********************************************
     function addOptiLanguage(langName){
-        const li = document.createElement('li');            // create list, append text and append that list as child-list in parent
-        li.appendChild(document.createTextNode(langName))
+        const li = document.createElement('li');            // create list element, add text by create textNode and attach to the parent ul
+        li.appendChild(document.createTextNode(langName))   // createTextNode use gardaa purai tree traverse garna pardaina
         document.querySelector('.language').appendChild(li)
     }
     addOptiLanguage('golang')
 
+
     //**********************Edit: using innerHTML and .... ******************************
     const secondLang = document.querySelector("li:nth-child(2)")
     console.log(secondLang);
-    //secondLang.innerHTML = "Mojo"                 // by using innerHTML
+    //secondLang.innerHTML = "Mojo"                 // using innerHTML is not optimized
     const newli = document.createElement('li')      // by creating list, adding textContent and replaceWith that list
     newli.textContent = "Mojo"
-    secondLang.replaceWith(newli)
+    secondLang.replaceWith(newli)       // alredy li xa or reference xa. So, replace gareko
+
 
     //*********************edit: using outerHTML*****************************
     const firstLang = document.querySelector("li:first-child")
-    firstLang.outerHTML = '<li>TypeScript</li>'
+    firstLang.outerHTML = '<li>TypeScript</li>'     // using outerHTML
 
     //************************remove*****************************
     const lastLang = document.querySelector('li:last-child')

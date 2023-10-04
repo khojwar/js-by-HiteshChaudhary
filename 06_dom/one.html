@@ -66,6 +66,8 @@
     // 1. querySelector --> mention gareko element madhe first element
     // 2. querySelectorAll
 
+
+    // 1. querySelector
     console.log(document.querySelector("h2"));      // css selector lekhe jastai lekhne
     console.log(document.querySelector("#title"));      // css selector lekhe jastai lekhne
     console.log(document.querySelector(".heading"));      // css selector lekhe jastai lekhne
@@ -73,6 +75,38 @@
     console.log(document.querySelector("p:first-child"));      // css selector lekhe jastai lekhne
 
 
+    const myul = document.querySelector("ul")
+    const turnGreen = myul.querySelector("li")
+    console.log(turnGreen.style.backgroundColor = "green");
+    console.log(turnGreen.style.padding = "10px");
+    console.log(turnGreen.innerText);
+    console.log(turnGreen.innerText = "Oneeee");
 
+
+
+    // 2. querySelectorAll
+    // NodeList and HTMLCollection --> array haina. Tara array ko dherai kuraa milxa. Array maa "map" hunxa. yasmaa hudaina
+    
+    // a. NodeList xa bhane index number mention garnai parxa   // forEach hunxa 
+
+    const tempLiList = document.querySelectorAll("li")
+    console.log(tempLiList);        // Nodelist dinxa
+    // console.log(tempLiList.style.color = "red");    // error dinxa. kinaki yasmaa index define garna parxa
+    console.log(tempLiList[0].style.color = "red");     // don't forget to mention index number
+
+    tempLiList.forEach(function (l) {
+        l.style.backgroundColor = "Green"
+    })
+
+
+
+    // b. HTMLCollection    // foreach hudaina. So, array maa convert garne
+    const tempClassList = document.getElementsByClassName("list-item")
+    console.log(tempClassList);         
+    const myConvertedArray = Array.from(tempClassList)        // array maa convert gareko
+    console.log(myConvertedArray);
+    myConvertedArray.forEach(function (li) {
+        li.style.color = "orange"
+    })
 </script>
 </html>
