@@ -1,0 +1,19 @@
+------------------------------------- API -----------------------
+
+API talking language ho. 2 system bichmaa. either frontend/backend or haamrai frontend/backend huna sakxa
+or backend aruko, frontend haamro huna sakxa or frontend aruko, backend pani aruko or yauta java maa lekheko
+xa ra arko js maa or yauta rubi, arko php huna sakxa. e 2 system bichmaa kuraa garne maadhem hunxa, tio 
+API ho.
+
+eg. github API: https://api.github.com/users/khojwar
+
+other API's : https://randomuser.me/
+
+            https://jsonplaceholder.typicode.com/
+            https://jsonplaceholder.typicode.com/users
+
+
+
+------------------joson data or API padhna sajilo banaaune tool----------------------
+
+https://jsonformatter.org/
